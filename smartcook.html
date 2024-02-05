@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cooking Recipes</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Cooking Recipes</h1>
+    </header>
+    <main>
+        <section>
+            <div class="filters">
+                <h2>Dish category</h2>
+                <button onclick="show('filterss')">select</button>
+                <ul id="filterss">
+                    <li><input type="checkbox" name="category" value="breakfast"> Breakfast</li>
+                    <li><input type="checkbox" name="category" value="soup"> Soup</li>
+                    <li><input type="checkbox" name="category" value="main course"> Main Course</li>
+                    <li><input type="checkbox" name="category" value="dessert"> Dessert</li>
+                    <li><input type="checkbox" name="category" value="dinner"> Dinner</li>
+                </ul>
+            </div>
+            <div class="recipes" id="recipeContainer">
+                <!-- Recipe cards will be dynamically added here using JavaScript -->
+            </div>
+        </section>
+        <section>
+        <button onclick="show('menu')">Recipe category</button>
+        <nav id="menu">
+            <ul>
+                <li class="menu-item" data-category="breakfast">Breakfast</li>
+                <li class="menu-item" data-category="soup">Soup</li>
+                <li class="menu-item" data-category="main-course">Main Course</li>
+                <li class="menu-item" data-category="dessert">Dessert</li>
+                <li class="menu-item" data-category="dinner">Dinner</li>
+                <li class="menu-item" data-category="rollover">Filter by</li>
+                <li class="menu-item" data-category="soup">Soup</li>
+                <li class="menu-item" data-category="meat">Meat</li>
+                <li class="menu-item" data-category="meat-free">Meat Free</li>
+                <li class="menu-item" data-category="dessert">Dessert</li>
+                <li class="menu-item" data-category="sauce">Sauce</li>
+                <li class="menu-item" data-category="pasta">Pasta</li>
+                <li class="menu-item" data-category="salad">Salad</li>
+                <li class="menu-item" data-category="sweet-food">Sweet Food</li>
+                <li class="menu-item" data-category="drink">Drink</li>
+            </ul>
+        </nav>
+        </section>
+    <section>
+        <h2>Filter by Price</h2>
+        <input type="range" min="1" max="3" step="1" value="2" id="priceRange">
+        <h2>Filter by Difficulty</h2>
+        <input type="range" min="1" max="3" step="1" value="2" id="difficultyRange">
+    </section>
+    </header>
+
+    </main>
+    <script src="script.js"></script>
+</body>
+</html>
